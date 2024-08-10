@@ -6,6 +6,8 @@ import { Component, inject, signal } from '@angular/core';
 // Material
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { IProjects } from '../../interface/IProjects';
+import { EDialogPanelClass } from '../../enum/EDialogPanelClass.enum';
+import { DialogProjectsComponent } from '../dialog/dialog-projects/dialog-projects.component';
 
 // Enum
 // import { EDialogPanelClass } from '../../enum/EDialogPanelClass.enum';
@@ -27,11 +29,11 @@ export class ProjectsComponent {
     {
       src: 'assets/img/projects/amigoSecreto.png',
       alt: '',
-      title: 'Vida FullStack',
+      title: 'Amigo Secreto',
       width: '100px',
       height: '51px',
       description:
-        '<p>Explore o fascinante mundo do desenvolvimento web no meu blog dedicado exclusivamente ao ecossistema Angular, Front-end, JavaScript, Node.js e TypeScript.</p> <p>Desvende os segredos por trás da construção de interfaces modernas, aprimore suas habilidades de programação front-end quanto back-end e mergulhe em conceitos avançados de JavaScript e TypeScript.</p>',
+        '<p> Criei um aplicativo que sorteia nomes para a brincadeira de amigo secreto, facilitando a organização e distribuição dos participantes de maneira aleatória e divertida.</p>',
       links: [
         {
           name: 'Veja mais',
@@ -42,11 +44,11 @@ export class ProjectsComponent {
     {
       src: 'assets/img/projects/animaisFantasticos.png',
       alt: '',
-      title: 'Vida FullStack',
+      title: 'Animais Fantasticos',
       width: '100px',
       height: '51px',
       description:
-        '<p>Explore o fascinante mundo do desenvolvimento web no meu blog dedicado exclusivamente ao ecossistema Angular, Front-end, JavaScript, Node.js e TypeScript.</p> <p>Desvende os segredos por trás da construção de interfaces modernas, aprimore suas habilidades de programação front-end quanto back-end e mergulhe em conceitos avançados de JavaScript e TypeScript.</p>',
+        '<p>Desenvolvi um site interativo em JavaScript com o objetivo de aprender a linguagem. Este projeto apresenta uma interface envolvente, permitindo que os usuários interajam com conteúdo sobre animais fantásticos.</p>',
       links: [
         {
           name: 'Veja mais',
@@ -57,11 +59,11 @@ export class ProjectsComponent {
     {
       src: 'assets/img/projects/buzzFeed.png',
       alt: '',
-      title: 'Vida FullStack',
+      title: 'Buzz Feed',
       width: '100px',
       height: '51px',
       description:
-        '<p>Explore o fascinante mundo do desenvolvimento web no meu blog dedicado exclusivamente ao ecossistema Angular, Front-end, JavaScript, Node.js e TypeScript.</p> <p>Desvende os segredos por trás da construção de interfaces modernas, aprimore suas habilidades de programação front-end quanto back-end e mergulhe em conceitos avançados de JavaScript e TypeScript.</p>',
+        '<p>Desenvolvi uma réplica da funcionalidade do Buzzfeed, onde os usuários escolhem um superpoder, e o sistema determina se eles seriam heróis ou vilões. Este projeto me permitiu explorar a interação com o usuário e a lógica de decisão.</p>',
       links: [
         {
           name: 'Veja mais',
@@ -72,11 +74,11 @@ export class ProjectsComponent {
     {
       src: 'assets/img/projects/pomodoro.png',
       alt: '',
-      title: 'Vida FullStack',
+      title: 'Pomodoro',
       width: '100px',
       height: '51px',
       description:
-        '<p>Explore o fascinante mundo do desenvolvimento web no meu blog dedicado exclusivamente ao ecossistema Angular, Front-end, JavaScript, Node.js e TypeScript.</p> <p>Desvende os segredos por trás da construção de interfaces modernas, aprimore suas habilidades de programação front-end quanto back-end e mergulhe em conceitos avançados de JavaScript e TypeScript.</p>',
+        '<p>Criei uma aplicação Pomodoro que cumpre sua função de temporizador, incluindo funcionalidades como música e alertas, ajudando os usuários a gerenciar seu tempo de maneira eficiente.</p>',
       links: [
         {
           name: 'Veja mais',
@@ -87,11 +89,11 @@ export class ProjectsComponent {
     {
       src: 'assets/img/projects/portfolioJoana.png',
       alt: '',
-      title: 'Vida FullStack',
+      title: 'portfolio Joana',
       width: '100px',
       height: '51px',
       description:
-        '<p>Explore o fascinante mundo do desenvolvimento web no meu blog dedicado exclusivamente ao ecossistema Angular, Front-end, JavaScript, Node.js e TypeScript.</p> <p>Desvende os segredos por trás da construção de interfaces modernas, aprimore suas habilidades de programação front-end quanto back-end e mergulhe em conceitos avançados de JavaScript e TypeScript.</p>',
+        '<p>Portfólio Fitcticio</p>',
       links: [
         {
           name: 'Veja mais',
@@ -102,11 +104,11 @@ export class ProjectsComponent {
     {
       src: 'assets/img/projects/numeroDaSorte.png',
       alt: '',
-      title: 'Vida FullStack',
+      title: 'Numero da Sorte',
       width: '100px',
       height: '51px',
       description:
-        '<p>Explore o fascinante mundo do desenvolvimento web no meu blog dedicado exclusivamente ao ecossistema Angular, Front-end, JavaScript, Node.js e TypeScript.</p> <p>Desvende os segredos por trás da construção de interfaces modernas, aprimore suas habilidades de programação front-end quanto back-end e mergulhe em conceitos avançados de JavaScript e TypeScript.</p>',
+        '<p>Desenvolvi um programa para praticar a linguagem de programação, que sorteia um número e informa ao usuário se ele acertou ou não, oferecendo uma experiência de jogo simples e direta.</p>',
       links: [
         {
           name: 'Veja mais',
@@ -117,9 +119,9 @@ export class ProjectsComponent {
   ]);
 
   public openDialog(data: IProjects) {
-    // this.#dialog.open(DialogProjectsComponent, {
-    //   data,
-    //   panelClass: EDialogPanelClass.PROJECTS,
-    // });
+    this.#dialog.open(DialogProjectsComponent, {
+      data,
+      panelClass: EDialogPanelClass.PROJECTS,
+    });
   }
 }
