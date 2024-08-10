@@ -25,7 +25,52 @@ export class ProjectsComponent {
 
   public arrayProjects = signal<IProjects[]>([
     {
-      src: 'assets/img/projects/vfull.png',
+      src: 'assets/img/projects/amigoSecreto.png',
+      alt: '',
+      title: 'Vida FullStack',
+      width: '100px',
+      height: '51px',
+      description:
+        '<p>Explore o fascinante mundo do desenvolvimento web no meu blog dedicado exclusivamente ao ecossistema Angular, Front-end, JavaScript, Node.js e TypeScript.</p> <p>Desvende os segredos por trás da construção de interfaces modernas, aprimore suas habilidades de programação front-end quanto back-end e mergulhe em conceitos avançados de JavaScript e TypeScript.</p>',
+      links: [
+        {
+          name: 'Veja mais',
+          href: 'https://amigo-secreto-rho-umber.vercel.app/',
+        },
+      ],
+    },
+    {
+      src: 'assets/img/projects/animaisFantasticos.png',
+      alt: '',
+      title: 'Vida FullStack',
+      width: '100px',
+      height: '51px',
+      description:
+        '<p>Explore o fascinante mundo do desenvolvimento web no meu blog dedicado exclusivamente ao ecossistema Angular, Front-end, JavaScript, Node.js e TypeScript.</p> <p>Desvende os segredos por trás da construção de interfaces modernas, aprimore suas habilidades de programação front-end quanto back-end e mergulhe em conceitos avançados de JavaScript e TypeScript.</p>',
+      links: [
+        {
+          name: 'Veja mais',
+          href: 'https://animais-fantasticos-ten-sigma.vercel.app/',
+        },
+      ],
+    },
+    {
+      src: 'assets/img/projects/buzzFeed.png',
+      alt: '',
+      title: 'Vida FullStack',
+      width: '100px',
+      height: '51px',
+      description:
+        '<p>Explore o fascinante mundo do desenvolvimento web no meu blog dedicado exclusivamente ao ecossistema Angular, Front-end, JavaScript, Node.js e TypeScript.</p> <p>Desvende os segredos por trás da construção de interfaces modernas, aprimore suas habilidades de programação front-end quanto back-end e mergulhe em conceitos avançados de JavaScript e TypeScript.</p>',
+      links: [
+        {
+          name: 'Veja mais',
+          href: 'https://buzz-feed-com-angular-dusky.vercel.app/',
+        },
+      ],
+    },
+    {
+      src: 'assets/img/projects/pomodoro.png',
       alt: '',
       title: 'Vida FullStack',
       width: '100px',
@@ -36,6 +81,36 @@ export class ProjectsComponent {
         {
           name: 'Veja mais',
           href: '',
+        },
+      ],
+    },
+    {
+      src: 'assets/img/projects/portfolioJoana.png',
+      alt: '',
+      title: 'Vida FullStack',
+      width: '100px',
+      height: '51px',
+      description:
+        '<p>Explore o fascinante mundo do desenvolvimento web no meu blog dedicado exclusivamente ao ecossistema Angular, Front-end, JavaScript, Node.js e TypeScript.</p> <p>Desvende os segredos por trás da construção de interfaces modernas, aprimore suas habilidades de programação front-end quanto back-end e mergulhe em conceitos avançados de JavaScript e TypeScript.</p>',
+      links: [
+        {
+          name: 'Veja mais',
+          href: 'https://projeto-fokus-seven.vercel.app/',
+        },
+      ],
+    },
+    {
+      src: 'assets/img/projects/numeroDaSorte.png',
+      alt: '',
+      title: 'Vida FullStack',
+      width: '100px',
+      height: '51px',
+      description:
+        '<p>Explore o fascinante mundo do desenvolvimento web no meu blog dedicado exclusivamente ao ecossistema Angular, Front-end, JavaScript, Node.js e TypeScript.</p> <p>Desvende os segredos por trás da construção de interfaces modernas, aprimore suas habilidades de programação front-end quanto back-end e mergulhe em conceitos avançados de JavaScript e TypeScript.</p>',
+      links: [
+        {
+          name: 'Veja mais',
+          href: 'https://jogo-adivinhacao-iota.vercel.app/',
         },
       ],
     },

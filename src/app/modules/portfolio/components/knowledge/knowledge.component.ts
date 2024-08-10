@@ -23,7 +23,19 @@ export class KnowledgeComponent {
       alt:'icone de conhecimento de html5'
     },
     {
+      src:'assets/icons/knowledge/typescript.svg',
+      alt:'icone de conhecimento de html5'
+    },
+    {
       src:'assets/icons/knowledge/angular.svg',
+      alt:'icone de conhecimento de html5'
+    },
+    {
+      src:'assets/icons/knowledge/csharp.svg',
+      alt:'icone de conhecimento de html5'
+    },
+    {
+      src:'assets/icons/knowledge/sql.svg',
       alt:'icone de conhecimento de html5'
     },
   ])
